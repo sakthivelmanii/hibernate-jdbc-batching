@@ -27,11 +27,11 @@ public class Singer {
   private String genre;
 
   @Column(name = "createdAt")
-  @CreationTimestamp
+  @CreationTimestamp(source = SourceType.VM)
   private Timestamp createdAt;
 
   @Column(name = "updatedAt")
-  @UpdateTimestamp
+  @UpdateTimestamp(source = SourceType.VM)
   private Timestamp updatedAt;
 
   // Default constructor is required by Hibernate
